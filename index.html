@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MORI MATCHA HOUSE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f6ed;
+    color: #343c2e;
+}
+
+header {
+    background: #f8f6ed;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #526747;
+}
+
+nav a {
+    text-decoration: none;
+    color: #343c2e;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #879b70;
+}
+
+.hero {
+    min-height: 500px;
+    background: linear-gradient(
+        rgba(28, 45, 28, 0.45),
+        rgba(28, 45, 28, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.button {
+    display: inline-block;
+    background: #d7dfc5;
+    color: #34432e;
+    padding: 13px 30px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 30px;
+    color: #526747;
+    margin-bottom: 18px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.9;
+    color: #666;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.menu-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.menu-card h3 {
+    color: #526747;
+    margin-bottom: 12px;
+}
+
+.menu-card p {
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-weight: bold;
+    color: #8a7657;
+}
+
+.gallery {
+    background: #e9eddf;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 330px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+.contact {
+    background: #526747;
+    color: white;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact p {
+    line-height: 2;
+}
+
+footer {
+    background: #303c2c;
+    color: #eee;
+    text-align: center;
+    padding: 22px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MORI MATCHA HOUSE</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>MORI MATCHA HOUSE</h1>
+        <p>A Little Taste of Japan</p>
+        <a href="#menu" class="button">EXPLORE OUR MENU</a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">Welcome to MORI</h2>
+    <p>
+        MORI MATCHA HOUSE is a Japanese-inspired matcha café
+        that brings the beauty of Japanese tea culture into
+        every cup. We carefully select quality matcha and
+        create delicious drinks and desserts for everyone
+        to enjoy. Take a break, relax, and experience
+        a little taste of Japan.
+    </p>
+</section>
+
+<section id="menu">
+    <h2 class="section-title">Our Menu</h2>
+    <p>Discover your favorite matcha moment.</p>
+
+    <div class="menu-items">
+        <div class="menu-card">
+            <h3>Signature Matcha Latte</h3>
+            <p>Rich matcha with smooth fresh milk.</p>
+            <div class="price">95 THB</div>
+        </div>
+
+        <div class="menu-card">
+            <h3>Premium Uji Matcha</h3>
+            <p>Authentic Japanese matcha experience.</p>
+            <div class="price">125 THB</div>
+        </div>
+
+        <div class="menu-card">
+            <h3>Strawberry Matcha</h3>
+            <p>A sweet combination of strawberry and matcha.</p>
+            <div class="price">115 THB</div>
+        </div>
+
+        <div class="menu-card">
+            <h3>Coconut Matcha</h3>
+            <p>Refreshing coconut with earthy matcha.</p>
+            <div class="price">110 THB</div>
+        </div>
+
+        <div class="menu-card">
+            <h3>Hojicha Latte</h3>
+            <p>Roasted Japanese tea with creamy milk.</p>
+            <div class="price">95 THB</div>
+        </div>
+
+        <div class="menu-card">
+            <h3>Matcha Cheesecake</h3>
+            <p>Soft and creamy cheesecake with matcha.</p>
+            <div class="price">125 THB</div>
+        </div>
+
+        <div class="menu-card">
+            <h3>Matcha Croissant</h3>
+            <p>Flaky pastry with a matcha flavor.</p>
+            <div class="price">95 THB</div>
+        </div>
+
+        <div class="menu-card">
+            <h3>Matcha Warabi Mochi</h3>
+            <p>Traditional Japanese-inspired sweet treat.</p>
+            <div class="price">85 THB</div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <h2 class="section-title">Our Café Moments</h2>
+    <p>Simple moments, beautiful flavors.</p>
+
+    <div>
+        <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=700&q=80" alt="Matcha drink">
+        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=700&q=80" alt="Japanese tea">
+        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=700&q=80" alt="Green tea">
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Visit Us</h2>
+    <p>Come and enjoy a peaceful matcha moment with us.</p>
+    <p>Email: morimatchahouse@example.com</p>
+    <p>Opening Hours: 10:00 AM – 8:00 PM</p>
+    <p>Follow us on Instagram: @morimatchahouse</p>
+</section>
+
+<footer>
+    <p>© 2026 MORI MATCHA HOUSE. All Rights Reserved.</p>
+     <p>A Little Taste of Japan</p>
+</footer>
+
+</body>
+</html>
